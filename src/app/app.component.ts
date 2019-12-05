@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular8';
+  expectedString = 'recipe';
+
+  onEmmitedFeature(feature: string) {
+    this.expectedString = feature;
+  }
 }
